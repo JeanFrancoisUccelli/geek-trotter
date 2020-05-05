@@ -1,0 +1,15 @@
+.iframe{
+display : flex ; 
+flex-direction: row;
+justify-content: space-around;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://img.freepik.com/photos-gratuite/ciel-bleu-fantastique_1203-1929.jpg?size=626&ext=jpg');
+}
+.btn{
+    color: rgba(231,236,239)
+}
+
