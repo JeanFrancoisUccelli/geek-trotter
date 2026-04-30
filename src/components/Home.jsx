@@ -1,61 +1,46 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useContext} from 'react'
 import { WebCamContext } from '../context/WebCamContext'
-import WebCamController from '../context/WebCamContext'
-import './home.css'; 
-import ReactDOM from 'react-dom'
+import './home.css';
 
-const Home =()=> {
+const Home = () => {
 
-    const [cam, setCam] = useContext(WebCamContext)
-    const [title, setTitle] = useContext(WebCamContext)
+    const [cam] = useContext(WebCamContext)
 
-// const shuffle1 = Math.floor(Math.random()*50)
-// var shuffle2 = Math.floor(Math.random()*50)
-// var shuffle3 = Math.floor(Math.random()*50)
+    return (
+        <>
+            <h1>Vers le confinement et au dela </h1>
 
-// function ResearchID() {
-//     for (let i = 0; i < cam.length; i++) {
-//    if (i === shuffle1){
-//        setCam(cam[i])
-//    }}
-// }
+            <p>Parce qu’un confiné n’est pas forcement un imbécile encerclé …<br/>
+            Nous vous proposons de partir ou vous le souhaitez selon vos envie depuis votre canapé !
+            <br/>Voici nos quelques idées du jour
+            </p>
 
-
-// useEffect(()=>{
-//     ResearchID()
-//     },[])
-
-
-
-// console.log(ResearchID())
-
-return (
-<>
-<h1>Vers le confinement et au dela </h1>
-
-<p>Parce qu’un confiné n’est pas forcement un imbécile encerclé …<br/>
-Nous vous proposons de partir ou vous le souhaitez selon vos envie depuis votre canapé ! 
-<br/>Voici nos quelques idées du jour 
-</p>
-
-<div className="iframe">
-{cam.map(e =>{ 
-    return(
- <div className = 'homepage'>
-    
-    <iframe 
-    title={e.title}
-    width="300"
-    height="200"
-    src={e.player.lifetime.embed}/><h6>{e.title}</h6>
-    </div>
- )} )
+            <div className="iframe">
+                {cam.map(e => (
+                    <div key={e.id} className='homepage'>
+                        {e.embedUrl ? (
+                            <iframe
+                                title={e.title}
+                                width="300"
+                                height="200"
+                                src={e.embedUrl}
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowFullScreen
+                            />
+                        ) : (
+                            <img
+                                src={e.image}
+                                alt={e.title}
+                                width="300"
+                                height="200"
+                            />
+                        )}
+                        <h6>{e.title}</h6>
+                    </div>
+                ))}
+            </div>
+        </>
+    )
 }
 
-</div>
-</>
-)
-}
-
-
-export default Home 
+export default Home

@@ -1,36 +1,28 @@
 import React, {useState, useEffect, createContext} from 'react'
-import axios from 'axios'
-import shuffle from 'shuffle-array'
-import ReactDOM from 'react-dom'
+import webcams from '../data/webcams.json'
 
 export const WebCamContext = createContext()
 
-export const WebCamController = (props) => {
-    
-    const [cam, setCam] = useState([]);
-    const [country, setCountry]= useState('FR')
-    
-
-    let shuffle1 = Math.floor(Math.random()*50)
-    let shuffle2 = Math.floor(Math.random()*50)
-    let shuffle3 = Math.floor(Math.random()*50)
-
-
-    useEffect (() => {
-        getData()
-    },[]) 
-
-    const getData = () =>{
-        axios.get(`https://api.windy.com/api/webcams/v2/list/limit=50?show=webcams:image,location,player&key=UFebPKjuVv8a28DWFr2z9hcQQa2NlDZS`)
-        .then(response => setCam(response.data.result.webcams.filter((e,index) => index === shuffle1 || index === shuffle2 || index === shuffle3 )))
-        
+const pickRandom = (list, count) => {
+    const copy = [...list]
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]]
     }
-   
+    return copy.slice(0, count)
+}
+
+export const WebCamController = (props) => {
+
+    const [cam, setCam] = useState([])
+
+    useEffect(() => {
+        setCam(pickRandom(webcams, 3))
+    }, [])
+
     return(
         <WebCamContext.Provider value={[cam, setCam]}>
             {props.children}
         </WebCamContext.Provider>
     )
-    
 }
-

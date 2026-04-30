@@ -1,0 +1,65 @@
+[
+  {
+    "id": "mont-blanc",
+    "title": "Mont-Blanc, Chamonix",
+    "category": "mountain",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Mont_Blanc_Aiguille.jpg/960px-Mont_Blanc_Aiguille.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "zermatt-cervin",
+    "title": "Cervin, Zermatt",
+    "category": "mountain",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg/960px-Matterhorn_from_Domh%C3%BCtte_-_2.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "dolomites",
+    "title": "Dolomites, Cortina",
+    "category": "mountain",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Faloria_Cortina_d%27Ampezzo_10.jpg/960px-Faloria_Cortina_d%27Ampezzo_10.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "calanques",
+    "title": "Calanques, Marseille",
+    "category": "beach",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Panorama-Calanque_de_Sugiton.jpg/960px-Panorama-Calanque_de_Sugiton.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "biarritz",
+    "title": "Cote des Basques, Biarritz",
+    "category": "beach",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Biarritz%E2%80%94View_from_Esplanade_Elisabeth_II.jpg/960px-Biarritz%E2%80%94View_from_Esplanade_Elisabeth_II.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "venise-lagune",
+    "title": "Lagune de Venise",
+    "category": "beach",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/960px-Venezia_aerial_view.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "paris-tour-eiffel",
+    "title": "Tour Eiffel, Paris",
+    "category": "city",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "rome-colisee",
+    "title": "Colisee, Rome",
+    "category": "city",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg",
+    "embedUrl": null
+  },
+  {
+    "id": "tokyo-shibuya",
+    "title": "Shibuya, Tokyo",
+    "category": "city",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/960px-Shibuya_Crossing%2C_Aerial.jpg",
+    "embedUrl": null
+  }
+]
