@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Nav, Button, FormControl, Form, Carousel} from 'react-bootstrap'; 
+import {Navbar, Nav, Button, FormControl, Form} from 'react-bootstrap';
 import  { NavLink }  from 'react-router-dom'
 import './NavBar.css'
 

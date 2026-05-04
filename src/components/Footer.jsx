@@ -7,9 +7,9 @@ render() {
     
   <div className ="footer">
   <div className="firstColumn">
-    <a>Contactez nous</a><br/>
-    <a>A propos</a><br/>
-    <a>Mentions Legales </a>
+    <a href="#contact">Contactez nous</a><br/>
+    <a href="#about">A propos</a><br/>
+    <a href="#legal">Mentions Legales </a>
 </div>
 <div className="secondColumn">
     <img className ="RS" src ="https://cdn.icon-icons.com/icons2/1183/PNG/512/1490133467-social-icons07_82213.png" alt='facebook'/>
