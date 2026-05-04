@@ -24,8 +24,9 @@
     "id": "calanques",
     "title": "Calanques, Marseille",
     "category": "beach",
-    "image": <a href="https://www.skylinewebcams.com/fr/webcam/france/provence-alpes-cote-dazur/marseille/les-calanques-de-marseille.html" target="_blank"><img src="https://embed.skylinewebcams.com/img/5451.jpg" alt="【LIVE】 Marseille - Les Calanques de Marseille | SkylineWebcams"></a>,
-    "embedUrl": null
+    "image": "https://embed.skylinewebcams.com/img/5451.jpg",
+    "embedUrl": null,
+    "watchUrl": "https://www.skylinewebcams.com/fr/webcam/france/provence-alpes-cote-dazur/marseille/les-calanques-de-marseille.html"
   },
   {
     "id": "biarritz",

@@ -27,6 +27,15 @@ const Home = () => {
                                 allow="autoplay; fullscreen; picture-in-picture"
                                 allowFullScreen
                             />
+                        ) : e.watchUrl ? (
+                            <a href={e.watchUrl} target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src={e.image}
+                                    alt={e.title}
+                                    width="300"
+                                    height="200"
+                                />
+                            </a>
                         ) : (
                             <img
                                 src={e.image}
