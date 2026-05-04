@@ -24,8 +24,8 @@
     "id": "calanques",
     "title": "Calanques, Marseille",
     "category": "beach",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Panorama-Calanque_de_Sugiton.jpg/960px-Panorama-Calanque_de_Sugiton.jpg",
-    "embedUrl": "https://embed.skylinewebcams.com/img/5451.jpg"
+    "image": "https://embed.skylinewebcams.com/img/5451.jpg",
+    "embedUrl": null
   },
   {
     "id": "biarritz",
