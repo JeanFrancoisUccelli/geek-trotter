@@ -3,13 +3,6 @@
    width: 50%;
 }
 
-img:active{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    max-width: 50%;
-}
-
  p{
      color : Black
  }
